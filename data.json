@@ -1,0 +1,9 @@
+{
+	"title": "# Sounds table #",
+	"sounds" : [
+		{ 
+			"text" : "beep" ,
+			"soundURL" : "https://raw.githubusercontent.com/Xatpy/SoundsTable/master/sounds/beep.mp3"
+		}
+	]
+}
