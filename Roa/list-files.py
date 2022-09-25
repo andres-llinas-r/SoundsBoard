@@ -22,7 +22,7 @@ for f in files:
     # Creates attributes for the sound object
     filename = os.path.splitext(f)[0].replace("-"," ")
     myobj = {}
-    myobj["text"] = filename
+    myobj["text"] = filename.capitalize()
     myobj["soundURL"] = "https://raw.githubusercontent.com/andres-llinas-r/SoundsBoard/dev/Roa/sounds/"+f
     myobj["tag"] = ""
 
