@@ -12,13 +12,15 @@ res = {}
 
 files = [f for f in os.listdir(dir) if f.endswith(".mp3")]
 for f in files:
+
+
     # Replaces spaces in filenames
     newPath = os.path.join(dir, f.replace(" ","-"))
     if( newPath != f):
         os.rename(os.path.join(dir, f),newPath)
     
     # Creates attributes for the sound object
-    filename = os.path.splitext(f)[0]
+    filename = os.path.splitext(f)[0].replace("-"," ")
     myobj = {}
     myobj["text"] = filename
     myobj["soundURL"] = "https://raw.githubusercontent.com/andres-llinas-r/SoundsBoard/dev/Roa/sounds/"+f
